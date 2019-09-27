@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>assignment 3</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+   
+   
+   <!-- bootstrap icon -->
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+   <!-- Latest compiled and minified CSS -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+   <!-- jQuery library -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+   <!-- Popper JS -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+
+   <!-- Latest compiled JavaScript -->
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<style>
+.header{
+    margin-bottom: 0;
+    background-color: white;
+}
+.navbar{
+   background-color: rgba(0, 0, 0, 0.5);
+   
+} 
+.navbar ul li a{
+font-size: 20px;
+}
+.form{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* background-color: rgba(0, 0, 0, 0.6); */
+    background-image: url(bootstrapimages/order2);
+} 
+.parallax{
+    background-image: url(bootstrapimages/order2.jpg);
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.parallax .container{
+    top: 50%;
+     left: 1%; 
+    position: absolute; background-color: rgba(0, 0, 0, 0.5);
+    width: 60%;
+    
+}
+@media only screen and (max-width: 600px) {
+  .parallax .container {
+   width: 100%;
+   left: 0px;
+  }
+}
+.form-container{
+    background-image: url(E:\alpha-1908\assignment2\bootstrapimages\bg.jpg);
+    left: 20%; 
+    position: absolute; background-color: rgba(0, 0, 0, 0.5);
+    width: 60%;
+    margin: 1%;
+    color: white;
+ 
+}
+@media only screen and (max-width: 600px) {
+  .form-container {
+  width: 100%;
+  margin: 0;
+  left: 0%;
+  }
+}
+body, html {
+  height: 100%;
+}
+
+</style>
+
+</head>
+<body>
+    
+         <!--navbar  -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top ">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+           </button>
+                
+        <div id="collapsibleNavbar"  class="collapse navbar-collapse">             
+        <ul class="navbar-nav"> 
+            <li class="nav-item active"><a class="nav-link" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">About us</a></li>
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown" href="#">Practice Areas</a>
+            <!-- dropdown links -->
+            <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Criminal law</a>
+                    <a class="dropdown-item" href="#">Fire law</a>
+                    <a class="dropdown-item" href="#">financial law</a>
+                    <a class="dropdown-item" href="#">Family law</a>
+                    <a class="dropdown-item" href="#">Bussiness law</a>
+                    <a class="dropdown-item" href="#">property law</a>
+                    <a class="dropdown-item" href="#">Employment law</a>
+            </div>
+            </li>
+
+            <li class="nav-item"><a class="nav-link" href="#">Case studies</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+        </div>
+        <form class="form-inline ">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-info" type="submit">Search</button>
+        </form>
+    </nav>
+
+    <!-- parallax code -->
+    <div class="parallax ">
+        <div class="container ">
+                <h1 style="color: white">Judge</h1>
+                <p style="color: white">A law firm</p>
+                <h1 style="color:white">The Greatest & Strongest Firm<br> You Can Trust</h1>
+                <a class="btn btn-info" href="#form">Free Consultation</a>
+        </div>
+    </div>
+    
+
+    <!-- intoduction -->
+     <div class="row bg-white jumbotron text-center" style="margin-bottom:0px">
+      <div class="col-sm-6">
+      <img class="rounded" height="95%" src="bootstrapimages/balanace.jpg">
+      </div>
+     
+     <div class="col-sm-6">      
+         <h1>We Always Fight For Your Justice to Win</h1>
+         <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia 
+          A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.<br>
+         Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+    </div>
+    </div>
+    <!-- practice code -->
+    <div class="container-fluid">
+      <div class="jumbotron text-center bg-white">
+          <h1>Practice Areas</h1>
+      </div>
+      <div  class="row container-fluid">
+          <div class="col-sm-3 card">
+           <img src="bootstrapimages/familylaw.jpg" class="card-img-top">
+           <div class="card-body">
+               <h3 class="card-title">Family law</h3>
+               <p class="card-text">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+           </div>
+          </div>
+          <div class="col-sm-3 card">
+            <img src="bootstrapimages/bussiness law.jpg" class="card-img-top">
+            <div class="card-body">
+                <h3 class="card-title">Business Law</h3>
+                <p class="card-text">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+            </div>
+           </div>
+           <div class="col-sm-3 card">
+            <img src="bootstrapimages/insurancelaw.jpg" class="card-img-top">
+            <div class="card-body">
+                <h3 class="card-title">Insurance Law</h3>
+                <p class="card-text">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+            </div>
+           </div>
+           <div class="col-sm-3 card">
+            <img src="bootstrapimages/criminallaw.jpg" class="card-img-top">
+            <div class="card-body">
+                <h3 class="card-title">Criminal law</h3>
+                <p class="card-text">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+            </div>
+           </div>
+   
+          
+      </div>
+      <div class="row container-fluid">
+        <div class="col-sm-3 card">
+            <img class="card-img-top" src="bootstrapimages/property law.jpg">
+            <div class="card-body">
+                <h3 class="card-title">Property Law</h3>
+                <p class="card-text">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+            </div>
+        </div>
+
+        <div class="col-sm-3 card">
+                <img class="card-img-top" src="bootstrapimages/employmentlaw.jpg">
+                <div class="card-body">
+                    <h3 class="card-title">Employment Law</h3>
+                    <p class="card-text">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                </div>
+            </div>
+
+            <div class="col-sm-3 card">
+                    <img class="card-img-top" src="bootstrapimages/firelaw.jpg">
+                    <div class="card-body">
+                        <h3 class="card-title">Fire Accident</h3>
+                        <p class="card-text">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                    </div>
+                </div>
+                <div class="col-sm-3 card">
+                        <img class="card-img-top" src="bootstrapimages/financial law.jpg">
+                        <div class="card-body">
+                            <h3 class="card-title">Financial Law</h3>
+                            <p class="card-text">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                        </div>
+                    </div>
+        </div>
+    </div>
+<!-- form  -->
+<div class="form-container" id="form">
+        <div class="container ">
+                <h1 class="text-info">free consultation</h1>
+                <form class="form">
+                        <div class="form-group">
+                            <label for="name">Name: </label>
+                            <input type="text" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email: </label>
+                            <input type="email" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="pass">Password: </label>
+                            <input type="password" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message: </label>
+                            <textarea rows="5" class="form-control" id="message"></textarea>
+                        </div>
+                        <input class="btn btn-success" type="submit" placeholder="Submit">
+                    </form>
+        </div>
+    </div> 
+   
+    <!-- form -->
+    <!-- <div class="row form">
+        <h1>free consultation</h1>
+    <form class="">
+        <div class="form-group">
+            <label for="name">Name: </label>
+            <input type="text" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="email">Email: </label>
+            <input type="email" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="pass">Password: </label>
+            <input type="password" class="form-control">
+        </div>
+        <div class="form-group">
+            <label for="message">Message: </label>
+            <textarea rows="5" class="form-control" id="message"></textarea>
+        </div>
+    </form>
+    </div> -->
+<!-- parallax code -->
+<div class="parallax"></div>
+
+   <!-- subscription button -->
+    <nav class="navbar navbar-expend-sm bg-info navbar-light">
+            <h1 class="text-light">subscribe to our newsletter</h1>
+        <form class="form-inline ">
+           
+            <input class="form-control mr-sm-2" type="text" placeholder="Email">
+            <button class="btn btn-success" type="submit">Subscription</button>
+        </form>
+      
+    </nav>
+
+    <!-- footer -->
+    <div class=" row text-center text-white bg-dark">
+        <div class="col-sm-3" style="margin: 2% 0%;">
+            <h3 class="text-info">About Us</h3>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            <h4>poweredby@safya</h4>
+        </div>
+        <div class="col-sm-3" style="margin: 2% 0%;">
+            <h3 class="text-info">Practice Area</h3>
+            <ul style="list-style-type:none">
+                <li><a href="#" class="text-success">Family Law</a></li>
+                <li><a href="#" class="text-success">Business Law</a></li>
+                <li><a href="#" class="text-success">Insurance Law</a></li>
+                <li><a href="#" class="text-success">Criminal Law</a></li>
+                <li><a href="#" class="text-success">Drug Offenses</a></li>
+            </ul>
+        </div>
+        <div class="col-sm-3" style="margin: 2% 0%;">
+            <h3 class="text-info">Bussiness Hours</h3>
+            <dl>
+                <dt>Opening Days</dt>
+                <dd>Monday – Friday : 9am to 20 pm Saturday : 9am to 17 pm</dd>
+                <dt>Vacations:</dt>
+                <dd>All Sunday Days All Official Holidays</dd>
+            </dl>
+        </div>
+        <div class="col-sm-3" style="margin: 2% 0%;">
+            <h3 class="text-info">Contact us</h3>
+            <i class="fas fa-map-marker"> 203 Fake St. Mountain View, San Francisco, California, USA</i>
+            <br>  <i class="fas fa-phone">  2314587522</i>
+
+    <br>        <i class="fas fa-envelope">	info@yourdomain.com</i>
+        </div >
+    </div>
+</body>
+</html>
